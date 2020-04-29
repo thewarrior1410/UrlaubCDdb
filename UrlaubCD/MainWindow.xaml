@@ -5,10 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UrlaubCD"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
+        Title="MainWindow" Height="600" Width="800">
+    
+    <Grid>
 
-        <TextBlock Background="Gray" Height="300">AAAAAAAA</TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <DockPanel Grid.Row="1" Grid.Column="0" Background="LightGray">
+            <DockPanel DockPanel.Dock="Top">
+                <Label DockPanel.Dock="Left">Search</Label>
+                <TextBox DockPanel.Dock="Right" Margin="20,5,10,5"></TextBox>
+            </DockPanel>
+            
+            <Separator DockPanel.Dock="Top"/>
+            
+            <Label DockPanel.Dock="Top">Playlists</Label>
+
+            <ScrollViewer DockPanel.Dock="Top">
+
+                <StackPanel x:Name="PlaylistStackPanel">
+                    
+                    
+                    
+                </StackPanel>
+
+            </ScrollViewer>
+            
+            
+            
+        </DockPanel>
+
+        <Button x:Name="testButton" Click="test" Grid.Row="2" Grid.Column="2">TEST</Button>
         
-    </StackPanel>
+        
+    </Grid>
+    
 </Window>

@@ -1,0 +1,15 @@
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\bin\Debug\UrlaubCD.exe.config
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\bin\Debug\UrlaubCD.exe
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\bin\Debug\UrlaubCD.pdb
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\App.g.cs
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD_MarkupCompile.cache
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD_MarkupCompile.lref
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.g.resources
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.Properties.Resources.resources
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.exe
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.pdb

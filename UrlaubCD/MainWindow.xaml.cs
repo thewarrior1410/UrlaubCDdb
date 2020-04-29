@@ -24,5 +24,25 @@ namespace UrlaubCD
         {
             InitializeComponent();
         }
+
+        private void test(object sender, RoutedEventArgs e)
+        {
+
+            PlaylistStackPanel.Children.Add(new Label
+            {
+                Height = 30,
+                Content = PlaylistStackPanel.Children.Count,
+                Background = getRandomColor()
+            });
+
+        }
+
+        public SolidColorBrush getRandomColor()
+        {
+            Random r = new Random();
+            SolidColorBrush scb = new SolidColorBrush(Color.FromRgb((byte)r.Next(255), (byte)r.Next(255), (byte)r.Next(255)));
+            return scb;
+        }
+
     }
 }
