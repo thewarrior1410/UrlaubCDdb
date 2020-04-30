@@ -3,7 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UrlaubCD"
+        xmlns:l="clr-namespace:UrlaubCD"
+        xmlns:control="clr-namespace:UrlaubCD.WPFUserControl"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800">
     
@@ -21,10 +22,9 @@
         </Grid.ColumnDefinitions>
 
 
-        <DockPanel Grid.Row="1" Grid.Column="0" Background="LightGray">
+        <DockPanel Grid.Row="1" Grid.Column="0" Background="DimGray">
             <DockPanel DockPanel.Dock="Top">
-                <Label DockPanel.Dock="Left">Search</Label>
-                <TextBox DockPanel.Dock="Right" Margin="20,5,10,5"></TextBox>
+                <control:SearchBox DockPanel.Dock="Left" Margin="20,5,10,5"></control:SearchBox>
             </DockPanel>
             
             <Separator DockPanel.Dock="Top"/>
@@ -45,6 +45,28 @@
             
         </DockPanel>
 
+
+        <DockPanel Grid.Row="1" Grid.Column="1" Background="LightGray">
+
+            <DockPanel DockPanel.Dock="Top" Height="30">
+                <control:SearchBox DockPanel.Dock="Right" Margin="200,5,10,5"></control:SearchBox>
+            </DockPanel>
+            <Separator DockPanel.Dock="Top"/>
+
+            <Label DockPanel.Dock="Top">SONGS</Label>
+            <ScrollViewer DockPanel.Dock="Top">
+
+                <StackPanel x:Name="songsStackPanel">
+                    
+                    
+
+                </StackPanel>
+
+            </ScrollViewer>
+
+        </DockPanel>
+        
+        
         <Button x:Name="testButton" Click="test" Grid.Row="2" Grid.Column="2">TEST</Button>
         
         

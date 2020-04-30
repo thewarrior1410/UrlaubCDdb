@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UrlaubCD.WPFUserControl;
 
 namespace UrlaubCD
 {
@@ -28,11 +29,12 @@ namespace UrlaubCD
         private void test(object sender, RoutedEventArgs e)
         {
 
-            PlaylistStackPanel.Children.Add(new Label
+            PlaylistStackPanel.Children.Add(new PlaylistLabel
             {
                 Height = 30,
-                Content = PlaylistStackPanel.Children.Count,
-                Background = getRandomColor()
+                // Content = PlaylistStackPanel.Children.Count,
+                Background = getRandomColor(),
+                Foreground = Brushes.White
             });
 
         }
@@ -42,6 +44,14 @@ namespace UrlaubCD
             Random r = new Random();
             SolidColorBrush scb = new SolidColorBrush(Color.FromRgb((byte)r.Next(255), (byte)r.Next(255), (byte)r.Next(255)));
             return scb;
+        }
+
+        public void onLoadPlaylist(object sender)
+        {
+            songsStackPanel.Children.Add(new Label
+            {
+                Content = "TEST"
+            });
         }
 
     }
