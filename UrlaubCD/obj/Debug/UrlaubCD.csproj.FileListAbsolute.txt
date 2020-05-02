@@ -17,3 +17,8 @@ C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDd
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\SearchBox.baml
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\PlaylistLabel.g.cs
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\PlaylistLabel.baml
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\SongLabel.g.cs
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\SongLabel.baml
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\AddSongLabel.g.cs
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\AddSongLabel.baml

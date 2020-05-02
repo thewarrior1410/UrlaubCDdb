@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UrlaubCD.Data;
 using UrlaubCD.WPFUserControl;
 
 namespace UrlaubCD
@@ -29,14 +30,14 @@ namespace UrlaubCD
         private void test(object sender, RoutedEventArgs e)
         {
 
-            PlaylistStackPanel.Children.Add(new PlaylistLabel
-            {
-                Height = 30,
-                // Content = PlaylistStackPanel.Children.Count,
-                Background = getRandomColor(),
-                Foreground = Brushes.White
-            });
+            PlaylistLabel plLabel = new PlaylistLabel();
+            plLabel.Height = 30;
+            // plLabel.Content = PlaylistStackPanel.Children.Count;
+            plLabel.Background = getRandomColor();
+            plLabel.Foreground = Brushes.White;
+            plLabel.MouseLeftButtonDown += new MouseButtonEventHandler(onLoadPlaylist);
 
+            PlaylistStackPanel.Children.Add(plLabel);
         }
 
         public SolidColorBrush getRandomColor()
@@ -46,13 +47,41 @@ namespace UrlaubCD
             return scb;
         }
 
-        public void onLoadPlaylist(object sender)
+        public void onLoadPlaylist(object sender, RoutedEventArgs e)
         {
-            songsStackPanel.Children.Add(new Label
+            Playlist pl = ((PlaylistLabel)sender).Playlist;
+
+            // Keine Playlist ausgewählt
+            if (songsStackPanel.DataContext == null)
             {
-                Content = "TEST"
-            });
+                
+            }
+            // Playlist ändert sich nicht
+            else if (songsStackPanel.DataContext.Equals(pl))
+            {
+                return;
+            }
+
+            // Datacontext auf aktuelle Playlist setzen
+            songsStackPanel.DataContext = pl;
+            List<Song> songs = pl.Songs;
+
+            for (int i = 0; i < songs.Count(); i++) {
+
+                SongLabel sL = new SongLabel(songs[i], i+1);
+                songsStackPanel.Children.Add(sL);
+
+            }
+
+
+            AddSongLabel aSL = new AddSongLabel();
+            //aSL.add_Button.Click += new RoutedEventHandler(button_add_song);
+
+            songsStackPanel.Children.Add(aSL);
+
         }
+
+        
 
     }
 }

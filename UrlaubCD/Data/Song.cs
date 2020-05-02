@@ -2,15 +2,23 @@
 
 namespace UrlaubCD.Data
 {
-    class Song
+    public class Song
     {
-
-        public string Interpret { get; set; }
+        
+        public string Song_name { get; set; }
+        public string Interpret_name { get; set; }
         
 
-        public Song(string interpret)
+        public Song()
         {
-            Interpret = interpret;
+            Song_name = "";
+            Interpret_name = "";
+        }
+
+        public Song(string name, string interpret)
+        {
+            Song_name = name;
+            Interpret_name = interpret;
         }
 
     }

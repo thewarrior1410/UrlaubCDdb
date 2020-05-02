@@ -10,13 +10,13 @@ namespace UrlaubCD.WPFUserControl
     /// </summary>
     public partial class PlaylistLabel : UserControl
     {
-
-        private Playlist pl = new Playlist();
+        public Playlist Playlist { get; set; }
 
         public PlaylistLabel()
         {
             InitializeComponent();
-            lb.Content = pl.playlist_name;
+            Playlist = new Playlist();
+            lb.Content = Playlist.Playlist_name;
         }
 
 

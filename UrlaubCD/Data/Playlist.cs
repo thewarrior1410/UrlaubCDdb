@@ -3,22 +3,23 @@ using System.Collections.Generic;
 
 namespace UrlaubCD.Data
 {
-    class Playlist
+    public class Playlist
     {
 
-        public List<Song> songs = new List<Song>();
-        public String playlist_name { get; set; }
+        public List<Song> Songs { get; set; } = new List<Song>();
+
+
+        public string Playlist_name { get; set; }
 
         public Playlist()
         {
-            playlist_name = "Playlist 1";
-            songs.Add(new Song("Genesis"));
-
+            Playlist_name = "Playlist 1";
+            Songs.Add(new Song("Supper's Ready", "Genesis"));
         }
 
         public void addSong(Song song)
         {
-            songs.Add(song);
+            Songs.Add(song);
         }
 
 
