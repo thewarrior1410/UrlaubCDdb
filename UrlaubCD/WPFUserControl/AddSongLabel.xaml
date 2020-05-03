@@ -17,19 +17,19 @@
             <ColumnDefinition Width="10*"/>
         </Grid.ColumnDefinitions>
 
-        <Label x:Name="number" Grid.Column="0">1</Label>
+        <Label x:Name="number" Grid.Column="0"></Label>
 
         <DockPanel Grid.Column="1">
             <Label>Lied:</Label>
-            <TextBox x:Name="song_inp" Margin="5"/>
+            <TextBox x:Name="song_inp" Margin="5" Text="{Binding Add_Song}"/>
         </DockPanel>
 
         <DockPanel Grid.Column="2">
             <Label>Interpret:</Label>
-            <TextBox x:Name="interpret_inp" Margin="5"/>
+            <TextBox x:Name="interpret_inp" Margin="5" Text="{Binding Add_Song}"/>
         </DockPanel>
 
-        <Button x:Name="add_Button" Grid.Column="3" Click="button_add_song">ADD</Button>
+        <Button x:Name="add_Button" Grid.Column="3">ADD</Button>
         
     </Grid>
 
