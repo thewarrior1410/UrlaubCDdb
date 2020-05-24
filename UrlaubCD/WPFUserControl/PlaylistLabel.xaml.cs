@@ -3,6 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
+using System.Windows.Media;
 using UrlaubCD.Data;
 
 namespace UrlaubCD.WPFUserControl
@@ -28,16 +29,37 @@ namespace UrlaubCD.WPFUserControl
             }
         }
 
+
         public PlaylistLabel()
         {
             InitializeComponent();
             Playlist = new Playlist();
 
-            Binding plName_Binding = new Binding("Playlist_name");
-            plName_Binding.Source = Playlist;
+            Height = 30;
+            Background = Brushes.DarkGray;
+            Foreground = Brushes.White;
 
-            lb.SetBinding(Label.ContentProperty, plName_Binding);
+            lb.Content = "_";
+        }
 
+        public PlaylistLabel(Playlist pl)
+        {
+            InitializeComponent();
+            Playlist = pl;
+
+            Height = 30;
+            Background = Brushes.DarkGray;
+            Foreground = Brushes.White;
+
+            lb.Content = pl.Playlist_name;
+        }
+
+
+        public SolidColorBrush getRandomColor()
+        {
+            Random r = new Random();
+            SolidColorBrush scb = new SolidColorBrush(Color.FromRgb((byte)r.Next(255), (byte)r.Next(255), (byte)r.Next(255)));
+            return scb;
         }
 
 
@@ -58,15 +80,6 @@ namespace UrlaubCD.WPFUserControl
                 SelectionUpdate(this, EventArgs.Empty);
             }
         }
-
-
-        /*
-        private void lb_GotFocus(object sender, RoutedEventArgs e)
-        {
-            //Wenn Playlist angeklickt wird: Rechts im Fenster Songs alle Songs in der Playlist anzeigen
-            //onLoadPlaylist(sender);
-        }
-        */
 
     }
 }

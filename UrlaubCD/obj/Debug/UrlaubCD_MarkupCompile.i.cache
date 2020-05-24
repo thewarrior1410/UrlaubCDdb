@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\App.xaml
-5-1457308100
+6-930016644
 
-121648358644
+13-1212461359
 13-1505183044
-MainWindow.xaml;WPFUserControl\PlaylistLabel.xaml;WPFUserControl\SearchBox.xaml;WPFUserControl\SongLabel.xaml;WPFUserControl\AddSongLabel.xaml;
+MainWindow.xaml;WPFUserControl\AddPlLabel.xaml;WPFUserControl\PlaylistLabel.xaml;WPFUserControl\SearchBox.xaml;WPFUserControl\SongLabel.xaml;WPFUserControl\AddSongLabel.xaml;
 
-False
+True
 

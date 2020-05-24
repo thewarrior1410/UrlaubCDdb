@@ -57,6 +57,9 @@
     </ApplicationDefinition>
     <Compile Include="Data\Playlist.cs" />
     <Compile Include="Data\Song.cs" />
+    <Compile Include="WPFUserControl\AddPlLabel.xaml.cs">
+      <DependentUpon>AddPlLabel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WPFUserControl\PlaylistLabel.xaml.cs">
       <DependentUpon>PlaylistLabel.xaml</DependentUpon>
     </Compile>
@@ -81,6 +84,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WPFUserControl\AddPlLabel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WPFUserControl\PlaylistLabel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

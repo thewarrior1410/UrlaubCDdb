@@ -22,3 +22,5 @@ C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDd
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\AddSongLabel.g.cs
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\AddSongLabel.baml
 C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\UrlaubCD.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\AddPlLabel.g.cs
+C:\Users\user\Desktop\Informatik\Programmieren\C#\GUI\WPF Desktop Apps\UrlaubCDdatenbank\UrlaubCD\obj\Debug\WPFUserControl\AddPlLabel.baml
