@@ -7,6 +7,17 @@ namespace UrlaubCD.Data
     public class Song : INotifyPropertyChanged
     {
 
+        private int track_number;
+        public int Track_number
+        {
+            get { return track_number; }
+            set
+            {
+                track_number = value;
+                OnPropertyChanged("Track_Number");
+            }
+        }
+
         private string song_name;
         public string Song_name 
         {
@@ -32,12 +43,14 @@ namespace UrlaubCD.Data
 
         public Song()
         {
+            Track_number = 0;
             Song_name = "";
             Interpret_name = "";
         }
 
-        public Song(string name, string interpret)
+        public Song(int num, string name, string interpret)
         {
+            Track_number = num;
             Song_name = name;
             Interpret_name = interpret;
         }

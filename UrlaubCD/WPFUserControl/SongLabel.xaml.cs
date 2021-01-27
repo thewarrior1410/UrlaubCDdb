@@ -14,11 +14,11 @@ namespace UrlaubCD.WPFUserControl
 
         public Song Song { get; set; }
 
-        public SongLabel(Song s, int num)
+        public SongLabel(Song s)
         {
             InitializeComponent();
             this.Song = s;
-            number.Content = num;
+            number.Content = s.Track_number;
             song.Content = s.Song_name;
             interpret.Content = s.Interpret_name;
 

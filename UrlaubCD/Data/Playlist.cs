@@ -16,6 +16,11 @@ namespace UrlaubCD.Data
             // Songs.Add(new Song("Supper's Ready", "Genesis"));
         }
 
+        public Playlist(String pl_name)
+        {
+            Playlist_name = pl_name;
+        }
+
         public void addSong(Song song)
         {
             Songs.Add(song);

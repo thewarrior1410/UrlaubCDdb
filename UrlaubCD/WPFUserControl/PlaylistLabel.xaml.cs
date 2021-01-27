@@ -66,7 +66,7 @@ namespace UrlaubCD.WPFUserControl
         public event EventHandler SelectionUpdate;
         private void OnSelectionUpdate(object sender, EventArgs e)
         {
-            Console.WriteLine("isSeleced Changed for" + ((PlaylistLabel)sender).Playlist.Playlist_name +"to "+isSelected.ToString());
+            Console.WriteLine("isSeleced Changed for " + ((PlaylistLabel)sender).Playlist.Playlist_name +" to "+isSelected.ToString());
             if (isSelected == true)
             {
                 lb.Style = Resources["isSelected"] as Style;
